@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devika Rajeev | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      color: #333;
+    }
+
+    header {
+      background-color: #0d1b2a;
+      color: #fff;
+      padding: 0.8rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffcc00; }
+
+    section {
+      padding: 35px 20px;   /* reduced from 60px */
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    p {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      width: 230px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    button {
+        background: linear-gradient(90deg, #6a11cb, #2575fc);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #2575fc, #6a11cb);
+    }
+
+    
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      margin-top: 20px;
+    }
+
+    footer a { color: #ffcc00; text-decoration: none; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Devika Rajeev</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio ✨</h2>
+    <p>Hello! I am Devika, a Final Year BTech student passionate about AI, Web Development, and Problem Solving.</p>
+    <button onclick="sayThanks()">Click Me</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a final-year BTech Computer Science student with strong interests in Artificial Intelligence, Web Programming, and Coding Challenges.</p>
+    <p>I enjoy building projects that create real-world impact like my startup idea <b>Petverse</b> 🐾.</p>
+    <p>Outside academics, I love music and dance, creative design, and mentoring peers.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><b>BTech in Computer Science</b> – 2021–2025<br> APJ Abdul Kalam Technological University, Kerala</p>
+    <p><b>Class 12</b> – Kerala State Board (Science Stream 99.33%)</p>
+    <p><b>Class 10</b> – Kerala State Board (Full A+)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>💻 Programming</h3><p>Python, C, HTML, CSS, JavaScript</p></div>
+      <div class="card"><h3>⚙️ Technologies</h3><p>React.js, Node.js, MongoDB</p></div>
+      <div class="card"><h3>🤖 AI/ML</h3><p>ChatGPT Tools, Automation, Data Visualization</p></div>
+      <div class="card"><h3>🎨 Other</h3><p>Canva, Poster Design, Public Speaking</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🐾 Petverse </h3>
+      <p>A web-based platform developed as part of our 6th semester mini project.  
+      It allows pet sellers and buyers to connect, view pet details, and explore pet products.  
+      The project was later selected as one of the <b>Top 20 Finalists</b> in the Indian Startup League 2025.</p>
+    </div>
+  </div>
+  </section>
+
+
+  <section id="achievements">
+  <h2>Achievements & Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🏆 Indian Startup League 2025</h3>
+      <p>Our S6 Mini Project <b>Petverse</b> was selected as one of the 
+      <b>Top 20 Finalists</b> in the Indian Startup League 2025. 
+    </div>
+    <div class="card">
+      <h3>📜 AI for All</h3>
+      <p>Earned certificates: <b>AI Aware</b> & <b>AI Appreciate</b> from Intel & Govt. of India.</p>
+    </div>
+    <div class="card">
+      <h3>💻 Coding Practice</h3>
+      <p>Consistently solving LeetCode problems to improve programming and problem-solving skills.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: devikarajeev1920@gmail.com</p>
+    <p>🐙 GitHub: <a href="https://github.com/devikapothiyil" target="_blank">devikapothiyil</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/devika-rajeev-99a10829a/" target="_blank">Devika Rajeev</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Devika Rajeev | Made with ❤️ using HTML, CSS, JS</p>
+  </footer>
+
+  <script>
+    function sayThanks() {
+      alert("Thanks for visiting my portfolio!!");
+    }
+  </script>
+</body>
+</html>
